@@ -2,6 +2,11 @@ package AccApp.AccMgmt;
 
 public class Account {
 
+	@Override
+	public String toString() {
+		return "Account [firstName=" + firstName + ", lastName=" + lastName + ", accountNumber=" + accountNumber + "]";
+	}
+
 	private String firstName;
 	private String lastName;
 	private String accountNumber;
