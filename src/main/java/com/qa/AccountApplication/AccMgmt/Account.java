@@ -1,4 +1,4 @@
-package AccApp.AccMgmt;
+package com.qa.AccountApplication.AccMgmt;
 
 public class Account {
 
