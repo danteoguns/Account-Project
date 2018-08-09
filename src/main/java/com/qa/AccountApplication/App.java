@@ -1,11 +1,11 @@
 package com.qa.AccountApplication;
 
 import java.util.HashMap;
-
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.qa.AccountApplication.AccMgmt.Account;
 import com.qa.AccountApplication.AccMgmt.Service;
+import json.JsonConvertion;
 
 public class App {
 
@@ -17,7 +17,10 @@ public class App {
 
 		service.addAccount("1", new Account("Daniel", "Oguns", "12345"));
 		service.addAccount("2", new Account("JC", "Sterling", "12346"));
-
+		service.addAccount("3", new Account("Daniel", "Og", "12347"));
+		service.addAccount("4", new Account("David", "Odun", "12348"));
+		service.addAccount("2", new Account("Jev", "Sterling", "12349"));
+		
 		Account account = service.getAccount("2");
 
 		System.out.println("Non-JSON Format");
@@ -40,6 +43,18 @@ public class App {
 		String prettyJson2 = prettyGson.toJson(account);
 		System.out.println("JSON Format - Print Individual");
 		sysout("\nPretty JSONObject ==> " + prettyJson2);
+		
+		System.out.println("------------------------------------------------------");
+		
+		System.out.println("Search using Iterator");
+		String firstName = prettyJson2.getO
+		System.out.println("Search First Name");
+		
+		System.out.println("Search Last Name");
+		
+		System.out.println("Search Account No.");
+		
+		
 		
 	}
 
